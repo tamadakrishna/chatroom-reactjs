@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.layout{
+  width:100%;
+  height:100vh;
+  /* border:2px solid red; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.chat-layout{
+  width:100%;
+  height:calc(100% - 55px);
+  /* border:2px solid blue; */
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.chat-layout::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
 }
 
-.App-link {
-  color: #61dafb;
+.chat{
+  width:100%;
+  height:55px;
+  /* border:2px solid rgb(32, 197, 123); */
+  display:flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.typing{
+  width:calc(100% - 100px);
+  height:100%;
+  /* border:3px solid yellow; */
+}
+
+.send{
+  width:100px;
+  height:100%;
+  /* border:3px solid red; */
+}
+
+.chat-body{
+  /* margin-left: 10px; */
+  margin:10px;
+  width:40%;
+  border:1px solid green;
+  border-radius:6px;
+}
+
+.username{
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.message-body{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom: 2px;
+}
+
+.message{
+  margin-left: 5px;
+  
+}
+
+.time{
+  font-size: 10px;
+  margin-right: 5px;
 }
