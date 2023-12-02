@@ -6,14 +6,11 @@ const ENDPOINT = "https://chatroom-reactjs.onrender.com";
 
 const ChatUI = ({username}) => {
 
-    console.log('username', username)
-
     const [Socket, setSocket] = useState({connected:false,});
     const [chat, setChat] = useState([]);
     const messagesEndRef = useRef(null);
 
     useEffect(()=>{
-        console.log('useEffect Executed')
         if(!Socket.connected)
         {
         const socket = io(ENDPOINT);
