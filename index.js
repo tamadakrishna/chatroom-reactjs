@@ -22,7 +22,6 @@ io.on('connection', (socket) => {
 
   socket.on('chat', msg=>{
     socket.broadcast.emit('chat',formatMessage(msg.name,msg.message))
-    console.log(msg)
   })
 });
 
