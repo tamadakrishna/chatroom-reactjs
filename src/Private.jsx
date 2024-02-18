@@ -15,7 +15,7 @@ const Private = ()=> {
       {
         !next ? (
           <div className="w-[400px] h-[150px] flex justify-center items-center gap-2 rounded-[5px] bg-[#F3F4F6] border-2 border-gray-400">
-            <input type="text" className="w-[180px] h-[40px] rounded-[5px] border border-gray-600"
+            <input type="text" placeholder="Room Name" className="w-[180px] h-[40px] rounded-[5px] border border-gray-600"
                     value={groupname}
                     onKeyDown={(e)=>{
                         if(e.key==="Enter" && groupname)

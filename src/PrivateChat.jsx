@@ -26,6 +26,7 @@ function PrivateChat() {
         
         setSocket(socket)
         }
+
   
     },[Socket.connected])
 
@@ -63,18 +64,20 @@ function PrivateChat() {
     const scrollToBottom = () =>{
         messageEndRef.current?.scrollIntoView({behavior:'smooth'});
     }
+
   return (
     <div className="w-[100%] h-[100vh] bg-slate-100 ">
         <div className="w-[100%] h-[calc(100%_-_50px)] overflow-y-scroll p-1">
         <ul>
                 {
                     chat?.map((info,index)=>{
+
                         return (
                         <div key={index} 
-                            className='max-w-[200px] h-[80px]  border-red-800'>
-                            <div className="max-w-[200px] h-[50px] rounded-[5px] bg-white border-[1px] border-gray-400 ">
+                            className='w-fit h-[80px]  '>
+                            <div className="w-[100%] h-[50px] px-1 rounded-[5px] bg-white border-[1px] border-gray-400 ">
                                 <div className='ml-[3px]'>
-                                    <span className='text-[15px] font-medium text-[#444242]'>{info.name}</span>
+                                    <span className={`text-[15px] font-medium text-[#444141]`}>{info.name}</span>
                                 </div>
                                 <div className="w-[100%] ml-[3px]">
                                     <div className="">

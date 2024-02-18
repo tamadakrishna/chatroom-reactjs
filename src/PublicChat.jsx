@@ -72,8 +72,8 @@ function PublicChat() {
                     chat?.map((info,index)=>{
                         return (
                         <div key={index} 
-                            className='max-w-[200px] h-[80px] '>
-                            <div className="max-w-[200px] h-[50px] rounded-[5px] bg-white border-[1px] border-gray-400 ">
+                            className='w-fit h-[80px] px-2'>
+                            <div className="w-[100%] h-[50px] rounded-[5px] bg-white border-[1px] border-gray-400 ">
                                 <div className='ml-[3px]'>
                                     <span className='text-[15px] font-medium text-[#444242]'>{info.name}</span>
                                 </div>
