@@ -1,8 +1,7 @@
 import { useLocation } from "react-router-dom";
 import React,{useState, useEffect, useRef} from 'react'
 import { io } from "socket.io-client";
-// const ENDPOINT = "https://chatroom-reactjs.onrender.com";
-const ENDPOINT ="http://localhost:3001";
+const ENDPOINT = "https://chatroom-reactjs.onrender.com";
 
 function PrivateChat() {
     const [Socket, setSocket] = useState({connected:false,});
