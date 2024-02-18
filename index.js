@@ -6,7 +6,7 @@ const app = express();
 
 app.use(cors())
 
-const expressServer = app.listen(3000, () => {
+const expressServer = app.listen(3001, () => {
     console.log(`server started`)
 })
 
@@ -21,15 +21,16 @@ io.on('connection', (socket) => {
   console.log('socket connected')
 
   socket.on('chat', msg=>{
-    socket.broadcast.emit('chat',formatMessage(msg.name,msg.message))
+    socket.broadcast.emit('chat',formatMessage(msg.name,msg.message,msg.type))
   })
 });
 
 
-function formatMessage(name, message) {
+function formatMessage(name, message, type) {
   return {
       name:name,
       message:message,
+      type:type,
       time: new Intl.DateTimeFormat('default', {
           hour: 'numeric',
           minute: 'numeric',
