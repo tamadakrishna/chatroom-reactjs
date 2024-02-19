@@ -74,12 +74,12 @@ function PrivateChat() {
 
                         return (
                         <div key={index} 
-                            className='w-fit h-[80px]  '>
-                            <div className="w-[100%] h-[50px] px-1 rounded-[5px] bg-white border-[1px] border-gray-400 ">
-                                <div className='ml-[3px]'>
-                                    <span className={`text-[15px] font-medium text-[#444141]`}>{info.name}</span>
+                            className='w-fit h-[80px]'>
+                            <div className="w-[100%] h-[40px] px-1 rounded-[5px] bg-white border-[1px] border-gray-400 ">
+                                <div className='h-[15px] ml-[3px]'>
+                                    <span className={`text-[12px] font-medium text-[#444141]`}>{info.name}</span>
                                 </div>
-                                <div className="w-[100%] ml-[3px]">
+                                <div className="w-[100%] h-[14px] ml-[3px]">
                                     <div className="">
                                         {info.message}
                                     </div>
@@ -111,8 +111,7 @@ function PrivateChat() {
                     onChange={(e)=>{setMessageInput(e.target.value)}} />
             </div>
             <div className="w-[150px] h-[100%] flex justify-center items-center p-1 ">
-                <button type="button" className=" h-[100%] w-[100%] py-2.5 px-5  text-sm  font-medium text-gray-900 focus:outline-none bg-white rounded-[10px] border border-gray-400 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 
-                                        dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                <button type="button" className=" h-[100%] w-[100%] py-2.5 px-5  text-sm  font-medium text-gray-900 focus:outline-none bg-white rounded-[10px] border border-gray-400 hover:bg-gray-100"
                         onClick={(e)=>{
                             setMessageInput('');
                             OnEmit(e)

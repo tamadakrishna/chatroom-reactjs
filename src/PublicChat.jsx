@@ -68,16 +68,18 @@ function PublicChat() {
     <div className="w-[100%] h-[100vh] bg-slate-100 ">
         <div className="w-[100%] h-[calc(100%_-_50px)] overflow-y-scroll p-1">
         <ul>
-                {
+            {
+
                     chat?.map((info,index)=>{
+
                         return (
                         <div key={index} 
-                            className='w-fit h-[80px] px-2'>
-                            <div className="w-[100%] h-[50px] rounded-[5px] bg-white border-[1px] border-gray-400 ">
-                                <div className='ml-[3px]'>
-                                    <span className='text-[15px] font-medium text-[#444242]'>{info.name}</span>
+                            className='w-fit h-[80px]'>
+                            <div className="w-[100%] h-[40px] px-1 rounded-[5px] bg-white border-[1px] border-gray-400 ">
+                                <div className='h-[15px] ml-[3px]'>
+                                    <span className={`text-[12px] font-medium text-[#444141]`}>{info.name}</span>
                                 </div>
-                                <div className="w-[100%] ml-[3px]">
+                                <div className="w-[100%] h-[14px] ml-[3px]">
                                     <div className="">
                                         {info.message}
                                     </div>
