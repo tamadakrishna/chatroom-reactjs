@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="w-[100%] h-[100vh] flex justify-center items-center px-2 ">
+    <div className="w-[100%] h-[100dvh] flex justify-center items-center px-2 ">
       <div className="w-[400px] h-[150px] flex justify-center items-center gap-2 rounded-[5px] bg-[#F3F4F6] border-2 border-gray-400
                       mobile:w-[250px] mobile:h-[120px]">
       <Link to="private">

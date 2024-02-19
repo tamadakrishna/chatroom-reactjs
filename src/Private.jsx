@@ -10,7 +10,7 @@ const Private = ()=> {
     const navigate = useNavigate();
 
   return (
-    <div className="w-[100%] h-[100vh] flex justify-center items-center">
+    <div className="w-[100%] h-[100dvh] flex justify-center items-center">
       
       {
         !next ? (

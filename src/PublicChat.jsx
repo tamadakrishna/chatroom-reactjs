@@ -65,7 +65,7 @@ function PublicChat() {
     }
 
   return (
-    <div className="w-[100%] h-[100vh] bg-slate-100 ">
+    <div className="w-[100%] h-[100dvh] bg-slate-100 ">
         <div className="w-[100%] h-[calc(100%_-_50px)] overflow-y-scroll p-1">
         <ul>
             {
